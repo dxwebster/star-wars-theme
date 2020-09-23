@@ -3,12 +3,13 @@ import React from 'react';
 import { Container } from "./styles"
 import Banner from '../../assets/banner.jpg';
 
-function Card( {movieData, newMovie}) {
+function Card( {movieData, newMovie, movieNumber}) {
     console.log(movieData)
     
     return(
         <Container>
             <div className="card">
+                
                 <img src={Banner} alt="Star Wars" className="banner"/>
                 
                 <section className="description"> 
@@ -25,3 +26,13 @@ function Card( {movieData, newMovie}) {
 }
 
 export default Card;
+
+
+// 1--m4
+// 2--m5
+// 3--m6
+
+
+// 4--m1
+// 5--m2
+// 6--m3

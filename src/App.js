@@ -11,6 +11,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [movieData, setMovieData] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+
+  const [movieNumber, setmovieNumber] = useState('');
     
   useEffect(() => {
       newMovie();
@@ -20,13 +22,16 @@ function App() {
   async function newMovie(){
       try {
         setLoading(true)
-        const movieNumber = Math.floor(Math.random() * 6) + 1
+        
+        const movieNumber = Math.floor(Math.random() * 6) + 1 
         const url = `https://swapi.dev/api/films/${movieNumber}`
+        setmovieNumber(movieNumber)
 
         const response = await fetch(url)
         const data = await response.json(); 
 
         setMovieData(data)
+        
         setLoading(false)
 
       } catch (error) {
@@ -40,7 +45,7 @@ function App() {
         <div className="wrap">
           <img src={logoImg} alt="Star Wars" className="logo"/>
           
-          {loading ? <Loading />  : <Card movieData={movieData} newMovie={newMovie}/>}
+          {loading ? <Loading />  : <Card movieData={movieData} newMovie={newMovie} movieNumber={movieNumber}/>}
 
           {errorMessage && <p className="error">{errorMessage}</p>}
         </div>
