@@ -7,24 +7,19 @@ export const Container = styled.div`
     color: #fff;
 
     .card {
-        max-width: 900px;
+        max-width: 800px;
         width: 100%;
         display: flex;
         justify-content: center;
         
-        .banner{
-            width: 50%;
-        }
-        
         .description {
-            width: 50%;
+            width:70%;
             padding: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             h1 {
-                align-items: center;
                 color: white;
                 font-size: 30px;
                 font-weight: 700;
