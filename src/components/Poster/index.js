@@ -13,12 +13,13 @@ export default function Poster({movieNumber}) {
 
     const [moviePoster, setMoviePoster] = useState('');
 
+    
 
-        return(
-            <Container className="poster">
-                <img src={moviePoster} alt="Star Wars" />
-            </Container>
-        )
+    return(
+        <Container className="poster">
+            <img src={moviePoster} alt="Star Wars" />
+        </Container>
+    )
 }
 
 
