@@ -19,6 +19,7 @@ function App() {
 
   async function newMovie(){
       try {
+        setLoading(true)
         const movieNumber = Math.floor(Math.random() * 6) + 1
         const url = `https://swapi.dev/api/films/${movieNumber}`
 
@@ -36,11 +37,13 @@ function App() {
   
     return (
       <Container>
-        <img src={logoImg} alt="Star Wars" />
-        
-        {loading ? <Loading />  : <Card movieData={movieData} newMovie={newMovie}/>}
+        <div className="wrap">
+          <img src={logoImg} alt="Star Wars" className="logo"/>
+          
+          {loading ? <Loading />  : <Card movieData={movieData} newMovie={newMovie}/>}
 
-        {errorMessage && <p className="error">{errorMessage}</p>}
+          {errorMessage && <p className="error">{errorMessage}</p>}
+        </div>
       </Container>
   
     )}
