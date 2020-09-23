@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import { Container } from "./styles"
 
@@ -11,20 +11,16 @@ import Post6 from '../../assets/06.jpg';
 
 export default function Poster({movieNumber}) {
 
-    var posters = [Post1, Post2, Post3, Post4, Post5, Post6]
+    const [moviePoster, setMoviePoster] = useState('');
 
-    for( var i = 0 ; i < posters.length; i++){
-        var poster = "Post"+movieNumber
-
-        console.log(poster)
 
         return(
             <Container className="poster">
-                <img src={poster} alt="Star Wars" />
+                <img src={moviePoster} alt="Star Wars" />
             </Container>
         )
-    }
 }
+
 
 
 
