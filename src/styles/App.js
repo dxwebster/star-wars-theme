@@ -1,40 +1,68 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    background: #000;
 
-export const Form = styled.form`
-  margin-top: 40px;
-  max-width: 700px;
-  display: flex;
-
-  input {
-    flex: 1;
-    height: 70px;
-    padding: 0 24px;
-    border: 0;
-    border-radius: 5px 0 0 5px;
-    color: #3a3a3a;
-    border: 2px solid #fff;
-
-    ${(props) =>
-      props.hasError &&
-      css`
-        border-color: #c53030;
-        border-right: 0;
-      `}
-
-    & ::placeholder {
-      color: #a8a8b3;
+    img{
+      width:200px;
+      margin-bottom: 50px;
     }
+  
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      padding: 50px;
+      border: 1px solid #fff;
+      color: #fff;
+  
+      h1 {
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+      }
+  
+      li{
+        list-style: none;
+        padding: 5px 0
+      }
+    
+      button{
+        width: 200px;
+        margin-top: 50px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        background: #000;
+        padding: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        transition: 0.3s;
+  
+        &:hover{
+          border: 1px solid #f7b80a;
+          color: #f7b80a;
+          background: #252525
+        }
+      }
+      
   }
 
-  button {
-    width: 210px;
-    height: 70px;
-    background: #04d361;
-    border-radius: 0px 5px 5px 0px;
-    border: 0;
-    color: #fff;
-    font-weight: bold;
-    transition: background-color 0.2s;
-  }
-`;
+
+
+`
+
+
+  
+
+
