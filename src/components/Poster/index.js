@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { Container } from "./styles"
+import { Container } from './styles';
+import RebelSymbolBG from '../../assets/RebelSymbolBG.png';
 
-export default function Poster({movieNumber}) {
+export default function Poster({ movieNumber }) {
+  return (
+    <Container className="poster">
+      <img src={require(`../../assets/${movieNumber}.png`)} alt="Star Wars" className="random-img" />
 
-    return(
-        <Container className="poster">
-            <img src={require(`../../assets/${movieNumber}.jpg`)} alt="Star Wars" />
-        </Container>
-    )
+      <img src={RebelSymbolBG} alt="Star Wars" />
+    </Container>
+  );
 }
