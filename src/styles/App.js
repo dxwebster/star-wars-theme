@@ -10,6 +10,8 @@ export const Container = styled.div`
     height: 100vh;
     background: #000;
 
+    padding-bottom: 50px;
+
 
    .wrap{
       position: relative;
@@ -22,12 +24,7 @@ export const Container = styled.div`
         margin-bottom:50px;
       }
   
-   }
-      
-  }
-
-
-
+   }  
 `
 
 
