@@ -1,40 +1,6 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-export const Header = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
-  div {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    img {
-      width: 150px;
-      margin-right: 30px;
-    }
-  }
-`;
-
-export const SearchButton = styled.button`
-  color: white;
-  background: #30c2ff;
-  border-radius: 50px;
-  padding: 10px 30px;
-  cursor: pointer;
-  font-size: 20px;
-  outline: none;
-  transition: 300ms;
-
-  &:hover {
-    background: ${shade(0.2, '#30c2ff')};
-  }
-`;
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

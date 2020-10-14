@@ -1,25 +1,30 @@
 import React, { useEffect, useState } from 'react';
 
-import { Container, Header, SearchButton, Content, Card } from './styles';
+import { Container, Content, Card } from './styles';
 
-import logoImg from '../../assets/logo.png';
+import Header from '../../components/Header';
 import Loading from '../../components/Loading';
-import SwitchButton from '../../components/SwitchButton';
 import Background from '../../components/Background';
 import Poster from '../../components/Poster';
 
+import { ThemeProvider } from 'styled-components';
+
+import light from '../../styles/themes/light';
+import dark from '../../styles/themes/dark';
+
 function App() {
+  const [theme, setTheme] = useState(light);
+
   const [loading, setLoading] = useState(true);
   const [movieData, setMovieData] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
   const [movieNumber, setmovieNumber] = useState('');
 
   useEffect(() => {
     newMovie();
   }, []);
 
-  async function newMovie() {
+  const newMovie = async () => {
     try {
       setLoading(true);
 
@@ -37,20 +42,17 @@ function App() {
       console.error(error);
       setErrorMessage('Não foi possivel obter os filmes. Volte mais tarde');
     }
-  }
+  };
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light);
+  };
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Container>
         <Background />
-        <Header>
-          <SwitchButton>Change Theme</SwitchButton>
-          <div>
-            <SearchButton onClick={newMovie}>Buscar</SearchButton>
-            <img src={logoImg} alt="Star Wars" />
-          </div>
-        </Header>
-
+        <Header toggleTheme={toggleTheme} newMovie={newMovie} />
         <Content>
           {loading ? (
             <Loading />
@@ -71,7 +73,7 @@ function App() {
           {errorMessage && <p className="error">{errorMessage}</p>}
         </Content>
       </Container>
-    </>
+    </ThemeProvider>
   );
 }
 

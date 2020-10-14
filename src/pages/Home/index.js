@@ -15,11 +15,11 @@ const Card = () => {
         <img src={logoImg} alt="GoBarber" />
         <h1>Escolha seu lado</h1>
         <div>
-          <Link to="/light-theme">
+          <Link to="/search-page">
             <img src={rebelSymbol} alt="rebelSymbol" />
           </Link>
 
-          <Link to="/dark-theme">
+          <Link to="/search-page">
             <img src={empireSymbol} alt="empireSymbol" />
           </Link>
         </div>
