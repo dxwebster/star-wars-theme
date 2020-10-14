@@ -2,13 +2,10 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
-  background: ${(props) => props.theme.colors.primary};
-
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 20px 30px;
 
   div {
     display: flex;

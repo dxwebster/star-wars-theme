@@ -12,6 +12,8 @@ import { ThemeProvider } from 'styled-components';
 import light from '../../styles/themes/light';
 import dark from '../../styles/themes/dark';
 
+import GlobalStyle from '../../styles/global';
+
 function App() {
   const [theme, setTheme] = useState(light);
 
@@ -50,8 +52,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Container>
-        <Background />
+        {/* <Background /> */}
         <Header toggleTheme={toggleTheme} newMovie={newMovie} />
         <Content>
           {loading ? (

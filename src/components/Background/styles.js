@@ -12,7 +12,8 @@ export const Container = styled.div`
   }
 
   .stars {
-    background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    background: ${(props) => props.theme.colors.background} url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    color: ${(props) => props.theme.colors.text};
     z-index: 0;
   }
 
