@@ -12,6 +12,7 @@ export default createGlobalStyle`
     font-family: sans-serif;
     margin: 0;
     height: 100vh;
+    overflow-y: hidden;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

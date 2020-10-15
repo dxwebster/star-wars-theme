@@ -53,8 +53,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Background />
       <Container>
-        {/* <Background /> */}
         <Header toggleTheme={toggleTheme} newMovie={newMovie} />
         <Content>
           {loading ? (

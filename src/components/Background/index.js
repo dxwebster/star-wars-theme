@@ -1,15 +1,12 @@
-import React from 'react'
-import { Container } from './styles.js'
-
+import React from 'react';
+import { Container } from './styles.js';
 
 const Background = () => (
-   <Container>
-       <div className="background" >
-         <div className="stars"></div>
-         <div className="twinkling"></div>
-      </div>
+  <Container>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
   </Container>
+);
 
-)
-
-export default Background
+export default Background;

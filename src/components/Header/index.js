@@ -18,9 +18,9 @@ const Header = ({ toggleTheme, newMovie }) => {
         checked={title === 'dark'}
         checkedIcon={false}
         uncheckedIcon={false}
-        height={10}
-        width={40}
-        handleDiameter={20}
+        height={40}
+        width={80}
+        handleDiameter={40}
         offColor={shade(0.15, colors.primary)}
         onColor={colors.secundary}
       />
