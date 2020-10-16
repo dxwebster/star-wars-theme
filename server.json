@@ -3,25 +3,19 @@
     {
       "id": 1,
       "name": "Luke Skywalker",
-      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
-      "price": "25.90",
-      "available": true,
+      "description": "Luke Skywalker é o protagonista da trilogia original da série Star Wars, faz participação em Star Wars: O Despertar da Força em Star Wars: Os Últimos Jedi. É interpretado pelo ator norte-americano Mark Hamill.",
       "image": "https://ik.imagekit.io/dxwebster/1_XmVhxmXqX.png"
     },
     {
       "id": 2,
       "name": "Stormtrooper",
       "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-      "price": "21.90",
-      "available": true,
       "image": "https://ik.imagekit.io/dxwebster/2_p0zF2fF85t.png"
     },
     {
       "id": 3,
       "name": "R2D2",
       "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
-      "price": "25.90",
-      "available": true,
       "image": "https://ik.imagekit.io/dxwebster/3_agXGAunj_.png"
     }
   ]

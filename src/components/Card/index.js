@@ -60,8 +60,7 @@ export default function Card() {
 
           <div>
             <h1>{characterData.name}</h1>
-            <li>Descrição: {characterData.description}</li>
-            <li>Preço: {characterData.price}</li>
+            <li>{characterData.description}</li>
           </div>
         </>
       )}
