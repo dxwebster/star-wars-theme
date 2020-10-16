@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
 
 export const Container = styled.div`
   display: flex;
@@ -21,15 +20,11 @@ export const Container = styled.div`
 
 export const SearchButton = styled.button`
   color: white;
-  background: #30c2ff;
+  background: ${(props) => props.theme.colors.primary};
   border-radius: 50px;
   padding: 10px 30px;
   cursor: pointer;
   font-size: 20px;
   outline: none;
   transition: 300ms;
-
-  &:hover {
-    background: ${shade(0.2, '#30c2ff')};
-  }
 `;

@@ -4,6 +4,8 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: stretch;
+  background: #000;
+  overflow: hidden;
 `;
 
 const appearFromTop = keyframes`

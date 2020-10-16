@@ -10,15 +10,13 @@ export default createGlobalStyle`
   body {    
     font-size: 14px;
     font-family: sans-serif;
-    margin: 0;
-    height: 100vh;
-    overflow-y: hidden;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: #000;
+    height: 100vh;
+  overflow: hidden;
 
-    background: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.text};
   }
 
 

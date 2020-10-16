@@ -12,6 +12,7 @@
 ---
 
 ## 🔖 Sobre
+
 Em breve...
 
 ## 📥 Executar esse projeto no seu computador
@@ -22,7 +23,12 @@ Em breve...
 - Rodar Aplicação: `yarn start`
 
 ## 🛠 Como criar esse projeto do zero
-Em breve...
+
+### Simulando uma API Rest fake com Json-server
+
+- Instalar o Json-server: `yarn add json-server`
+- Criar um arquivo server.json
+- Rodar o comando `yarn json-server server.json -p 3333`
 
 ## 📕 Licença
 

@@ -8,7 +8,7 @@ import logoImg from '../../assets/logo.png';
 import { Container, SearchButton } from './styles';
 import { shade } from 'polished';
 
-const Header = ({ toggleTheme, newMovie }) => {
+const Header = ({ toggleTheme, newCharacter }) => {
   const { colors, title } = useContext(ThemeContext);
 
   return (
@@ -25,7 +25,7 @@ const Header = ({ toggleTheme, newMovie }) => {
         onColor={colors.secundary}
       />
       <div>
-        <SearchButton onClick={newMovie}>Buscar</SearchButton>
+        <SearchButton onClick={newCharacter}>Buscar</SearchButton>
         <Link to="/">
           <img src={logoImg} alt="Star Wars" />
         </Link>
