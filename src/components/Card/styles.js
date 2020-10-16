@@ -30,6 +30,7 @@ export const Container = styled.div`
       list-style: none;
       padding: 5px 0;
       font-size: 20px;
+      line-height: 1.75em;
     }
 
     button {

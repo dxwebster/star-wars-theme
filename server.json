@@ -3,19 +3,19 @@
     {
       "id": 1,
       "name": "Luke Skywalker",
-      "description": "Luke Skywalker é o protagonista da trilogia original da série Star Wars, faz participação em Star Wars: O Despertar da Força em Star Wars: Os Últimos Jedi. É interpretado pelo ator norte-americano Mark Hamill.",
+      "description": "Luke Skywalker é o protagonista da trilogia original da série Star Wars. Um personagem essencial e importante na luta da Aliança Rebelde contra o Império Galáctico, é o irmão gêmeo da líder rebelde Princesa Leia Organa.",
       "image": "https://ik.imagekit.io/dxwebster/1_XmVhxmXqX.png"
     },
     {
       "id": 2,
       "name": "Stormtrooper",
-      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
+      "description": "Os Stormtroopers são a tropa de base do Império Galáctico no universo Star Wars. Devido à extenção do Império existem variações para diferentes terrenos e situações",
       "image": "https://ik.imagekit.io/dxwebster/2_p0zF2fF85t.png"
     },
     {
       "id": 3,
       "name": "R2D2",
-      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
+      "description": "R2-D2 é um pequeno robô e um dos principais personagens da saga Star Wars. Ele é um droide astromecânico, responsável por manutenção e navegação de astronaves.",
       "image": "https://ik.imagekit.io/dxwebster/3_agXGAunj_.png"
     }
   ]
