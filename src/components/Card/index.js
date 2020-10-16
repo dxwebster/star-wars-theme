@@ -15,24 +15,17 @@ export default function Card() {
 
   useEffect(() => {
     loadCharacter();
-  }, []);
+    console.log(characterId);
+  }, [characterId]);
 
   function handleIncrementId() {
     if (characterId > 3) return;
     setCharacterId(characterId + 1);
-
-    loadCharacter();
-
-    console.log(characterId);
   }
 
   function handleDecrementId() {
     if (characterId < 1) return;
     setCharacterId(characterId - 1);
-
-    loadCharacter();
-
-    console.log(characterId);
   }
 
   const loadCharacter = async () => {
