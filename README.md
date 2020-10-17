@@ -5,6 +5,10 @@ Essa é uma aplicação que exibe o perfil de alguns personagens do Star Wars pa
 - Consumo de Fake API com Json Server
 - Mudaça de Temas com Theme Provider do Styled Components
 
+** Principal funcionalidade**
+
+Ao trocar o tema ele busca os personagens correspondentes. Por exemplo, ao selecionar o tema dark, traz personagens do "Dark Side", e ao selecionar o tema light, traz personagens do "Light Side".
+
 <p align=center>
 
 <h5 align=center>
