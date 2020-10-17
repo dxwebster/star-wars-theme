@@ -28,8 +28,8 @@ Confira a aplicação [aqui](#)
 
 ## 📥 Execute esse projeto no seu computador
 
-- Clonar Repositório: `git clone https://github.com/dxwebster/Star-Wars-Info.git`
-- Ir para a pasta: `cd Star-Wars-Info`
+- Clonar Repositório: `git clone https://github.com/dxwebster/Star-Wars-Characters-Profile`
+- Ir para a pasta: `cd Star-Wars-Characters-Profile`
 - Instalar dependências: `yarn`
 - Rodar Aplicação: `yarn start`
 - Rodar servidor: `yarn json-server server.json -p 3333`
