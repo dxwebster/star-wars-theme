@@ -39,8 +39,8 @@ Confira a aplicação [aqui](#)
 
 Confira passo a passo na aba wiki:
 
-[1. Crie um novo React App](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Crie-um-novo-React-App)
-[2. Criação de uma Fake API com Json Server](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Cria%C3%A7%C3%A3o-de-uma-Fake-API-com-Json-Server)
+- [1. Crie um novo React App](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Crie-um-novo-React-App)
+- [2. Criação de uma Fake API com Json Server](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Cria%C3%A7%C3%A3o-de-uma-Fake-API-com-Json-Server)
 
 Em construção...
 
