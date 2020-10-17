@@ -12,8 +12,6 @@ export default function Card() {
   const [characterData, setCharacterData] = useState('');
   const [characterId, setCharacterId] = useState(1);
 
-  const [errorMessage, setErrorMessage] = useState('');
-
   const { title } = useContext(ThemeContext);
 
   useEffect(() => {
