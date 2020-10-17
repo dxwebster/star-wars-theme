@@ -1,4 +1,4 @@
-## Star Wars Characters Profile
+## Star Wars Toggle Theme
 
 Essa é uma aplicação que exibe o perfil de alguns personagens do Star Wars para praticar alguns conceitos do ReactJS, como:
 
