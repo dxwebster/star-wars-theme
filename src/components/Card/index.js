@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 
 import { Container, SearchButton } from './styles';
 import Loading from '../../components/Loading';
@@ -15,10 +16,12 @@ export default function Card() {
 
   const [errorMessage, setErrorMessage] = useState('');
 
+  const { title } = useContext(ThemeContext);
+
   useEffect(() => {
     loadCharacter();
     console.log(characterId);
-  }, [characterId]);
+  }, [characterId, title]);
 
   function handleIncrementId() {
     if (characterId > 3) return;
@@ -34,7 +37,7 @@ export default function Card() {
     try {
       setLoading(true);
 
-      const response = await api.get(`/lightCharacter/${characterId}`);
+      const response = await api.get(`/${title}/${characterId}`);
       setCharacterData(response.data);
 
       setLoading(false);

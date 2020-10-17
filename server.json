@@ -1,5 +1,5 @@
 {
-  "lightCharacter": [
+  "light": [
     {
       "id": 1,
       "name": "Luke Skywalker",
@@ -25,7 +25,7 @@
       "image": "https://ik.imagekit.io/dxwebster/6_b_aJc17q4.png"
     }
   ],
-  "darkCharacter": [
+  "dark": [
     {
       "id": 1,
       "name": "Darth Vader",
@@ -48,7 +48,7 @@
       "id": 4,
       "name": "Estrela da Morte",
       "description": "Estrela da Morte é uma estação espacial bélica criada pelo Império Galáctico que é capaz de causar a destruição total de planetas.",
-      "image": "https://ik.imagekit.io/dxwebster/8_w_MCv4uJD.png"
+      "image": "https://ik.imagekit.io/dxwebster/8_5AI6vLM-Tj.png"
     }
   ]
 }

@@ -8,7 +8,7 @@ import logoImg from '../../assets/logo.png';
 import { Container } from './styles';
 import { shade } from 'polished';
 
-const Header = ({ toggleTheme, newCharacter }) => {
+const Header = ({ toggleTheme }) => {
   const { colors, title } = useContext(ThemeContext);
 
   return (

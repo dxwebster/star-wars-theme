@@ -16,6 +16,7 @@ function App() {
 
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light);
+    console.log(theme.title);
   };
 
   return (
@@ -25,7 +26,7 @@ function App() {
         <Header toggleTheme={toggleTheme} />
 
         <Content>
-          <Card />
+          <Card theme={theme} />
         </Content>
       </Container>
     </ThemeProvider>
