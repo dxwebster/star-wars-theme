@@ -29,7 +29,7 @@ Essa é uma aplicação que traz o nome e descrição de alguns personagens do S
 
 Confira passo a passo na aba wiki:
 
-[1. Criação de uma Fake API com Json Server](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Cria%C3%A7%C3%A3o-de-uma-Fake-API-com-Json-Server)
+[2. Criação de uma Fake API com Json Server](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Cria%C3%A7%C3%A3o-de-uma-Fake-API-com-Json-Server)
 
 Em construção...
 
