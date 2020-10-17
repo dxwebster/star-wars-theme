@@ -17,7 +17,7 @@ export const Container = styled.div`
     max-width: 1500px;
 
     height: 100%;
-    max-height: 680px;
+    min-height: 680px;
 
     display: flex;
     align-items: center;
