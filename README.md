@@ -18,7 +18,7 @@ Essa é uma aplicação que traz o nome e descrição de alguns personagens do S
 - Consumo de Fake API com Json Server
 - Mudaça de Temas com Theme Provider do Styled Components
 
-## 📥 Executar esse projeto no seu computador
+## 📥 Execute esse projeto no seu computador
 
 - Clonar Repositório: `git clone https://github.com/dxwebster/Star-Wars-Info.git`
 - Ir para a pasta: `cd Star-Wars-Info`
