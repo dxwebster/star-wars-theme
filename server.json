@@ -7,7 +7,6 @@
       "image": "https://ik.imagekit.io/dxwebster/1_XmVhxmXqX.png",
       "planet": "Tattoine",
       "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
       "afiliation": "Aliança Rebelde"
     },
     {
@@ -15,9 +14,8 @@
       "name": "R2-D2",
       "description": "R2-D2 é um pequeno robô e um dos principais personagens da saga Star Wars. Ele é um droide astromecânico, responsável por manutenção e navegação de astronaves.",
       "image": "https://ik.imagekit.io/dxwebster/3_agXGAunj_.png",
-      "planet": "Tattoine",
-      "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
+      "planet": "Naboo",
+      "specie": "Droid",
       "afiliation": "Aliança Rebelde"
     },
     {
@@ -25,19 +23,17 @@
       "name": "BB-8",
       "description": "BB-8 é um robô personagem esférico com movimentação livre de sua cabeça em formato de domo, com inteligência artificial consegue se comunicar com quase todas as espécies da galáxia inclusive humanos.",
       "image": "https://ik.imagekit.io/dxwebster/5_qu2JdMY9c.png",
-      "planet": "Tattoine",
-      "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
-      "afiliation": "Aliança Rebelde"
+      "planet": "Desconhecido",
+      "specie": "Droid",
+      "afiliation": "Resistência"
     },
     {
       "id": 4,
       "name": "Chewbacca",
       "description": "Chewbacca é o copiloto da nave Millennium Falcon e o melhor amigo de Han Solo, e um alienígena da raça Wookiee, oriundo do planeta Kashyyyk. Junto com outros wookiees ele combateu as forças de Palpatine e do Império Galáctico, sendo o único sobrevivente de uma missão para salvar filhotes Wookiees de escravistas.",
       "image": "https://ik.imagekit.io/dxwebster/6_b_aJc17q4.png",
-      "planet": "Tattoine",
-      "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
+      "planet": "Kashyyyk",
+      "specie": "Wookiee",
       "afiliation": "Aliança Rebelde"
     }
   ],
@@ -49,38 +45,34 @@
       "image": "https://ik.imagekit.io/dxwebster/4_A9Vt8Sitk.png",
       "planet": "Tattoine",
       "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
-      "afiliation": "Aliança Rebelde"
+      "afiliation": "Império Galáctico"
     },
     {
       "id": 2,
       "name": "Kylo Ren",
       "description": "Ben Solo, que mais tarde assumiu o nome de Kylo Ren, é filho da Princesa Leia com Han Solo e possui uma relação complicada com a protagonista Rey, a neta do Imperador, sendo ela sua principal rival, ao mesmo tempo em que eles progressivamente começam a se apaixonar um pelo outro.",
       "image": "https://ik.imagekit.io/dxwebster/7_GvhkVsNWK.png",
-      "planet": "Tattoine",
+      "planet": "Chandrila",
       "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
-      "afiliation": "Aliança Rebelde"
+      "afiliation": "Primeira Ordem"
     },
     {
       "id": 3,
       "name": "Stormtrooper",
       "description": "Os Stormtroopers são a tropa de base do Império Galáctico no universo Star Wars. Devido à extenção do Império existem variações para diferentes terrenos e situações",
       "image": "https://ik.imagekit.io/dxwebster/2_p0zF2fF85t.png",
-      "planet": "Tattoine",
+      "planet": "Diversos",
       "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
-      "afiliation": "Aliança Rebelde"
+      "afiliation": "Império Galáctico"
     },
     {
       "id": 4,
       "name": "Palpatine",
       "description": "Darth Sidious, nascido Sheev Palpatine,omeçou como um simples senador que representava apenas o sistema Naboo. Palpatine foi progredindo, progredindo até se tornar Supremo Chanceler da República, dando apenas um passo para se tornar Imperador.",
       "image": "https://ik.imagekit.io/dxwebster/8_q67Qcn3u7.png",
-      "planet": "Tattoine",
+      "planet": "Naboo",
       "specie": "Humana",
-      "vehicles": "X-34 Landspeeder, T-16 Skyhopper, X-wing Starfighter, Snowspeeder",
-      "afiliation": "Aliança Rebelde"
+      "afiliation": "Império Galáctico"
     }
   ]
 }

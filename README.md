@@ -1,7 +1,7 @@
 <p align=center>
 
 <h5 align=center>
-<img src="readme/Capa.png" width=600><br>
+<img src="readme/Capa.gif" width=600><br>
 
 🎨 Design por [Adriana Lima](https://github.com/dxwebster)
 
