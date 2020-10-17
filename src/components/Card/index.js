@@ -1,10 +1,8 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 
-import { Container, SearchButton } from './styles';
+import { Container } from './styles';
 import Loading from '../../components/Loading';
-
-import Background from '../../components/Background';
 
 import api from '../../services/api';
 
@@ -20,15 +18,33 @@ export default function Card() {
 
   useEffect(() => {
     loadCharacter();
-    console.log(characterId);
   }, [characterId, title]);
 
+  const nextbutton = document.getElementById('proximo');
+  const prevbutton = document.getElementById('anterior');
+
   function handleIncrementId() {
+    prevbutton.style.opacity = '1';
+    prevbutton.style.cursor = 'pointer';
+
+    if (characterId === 3) {
+      nextbutton.style.opacity = '0.5';
+      nextbutton.style.cursor = 'default';
+    }
+
     if (characterId > 3) return;
     setCharacterId(characterId + 1);
   }
 
   function handleDecrementId() {
+    nextbutton.style.opacity = '1';
+    nextbutton.style.cursor = 'pointer';
+
+    if (characterId === 2) {
+      prevbutton.style.opacity = '0.5';
+      prevbutton.style.cursor = 'default';
+    }
+
     if (characterId < 2) return;
     setCharacterId(characterId - 1);
   }
@@ -43,13 +59,15 @@ export default function Card() {
       setLoading(false);
     } catch (error) {
       console.error(error);
-      setErrorMessage('Não foi possivel obter os personagens. Volte mais tarde');
+      setErrorMessage('Não foi possivel obter os personagens.');
     }
   };
 
   return (
     <Container>
-      <SearchButton onClick={handleDecrementId}>Anterior</SearchButton>
+      <button onClick={handleDecrementId} id="anterior">
+        Anterior
+      </button>
       <main>
         {loading ? (
           <Loading />
@@ -69,7 +87,9 @@ export default function Card() {
         {errorMessage && <p className="error">{errorMessage}</p>}
       </main>
 
-      <SearchButton onClick={handleIncrementId}>Próximo</SearchButton>
+      <button onClick={handleIncrementId} id="proximo">
+        Próximo
+      </button>
     </Container>
   );
 }

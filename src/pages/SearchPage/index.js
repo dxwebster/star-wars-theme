@@ -11,26 +11,25 @@ import { ThemeProvider } from 'styled-components';
 import light from '../../styles/themes/light';
 import dark from '../../styles/themes/dark';
 
-function App() {
+function SearchPage() {
   const [theme, setTheme] = useState(light);
 
-  const toggleTheme = () => {
+  const handleToggleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light);
     console.log(theme.title);
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <Background />
       <Container>
-        <Header toggleTheme={toggleTheme} />
-
+        <Background />
+        <Header handleToggleTheme={handleToggleTheme} />
         <Content>
-          <Card theme={theme} />
+          <Card />
         </Content>
       </Container>
     </ThemeProvider>
   );
 }
 
-export default App;
+export default SearchPage;

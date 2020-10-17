@@ -8,13 +8,13 @@ import logoImg from '../../assets/logo.png';
 import { Container } from './styles';
 import { shade } from 'polished';
 
-const Header = ({ toggleTheme }) => {
+const Header = ({ handleToggleTheme }) => {
   const { colors, title } = useContext(ThemeContext);
 
   return (
     <Container>
       <Switch
-        onChange={toggleTheme}
+        onChange={handleToggleTheme}
         checked={title === 'dark'}
         checkedIcon={false}
         uncheckedIcon={false}

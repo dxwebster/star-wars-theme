@@ -7,12 +7,12 @@ import rebelSymbol from '../../assets/rebelSymbol.svg';
 import empireSymbol from '../../assets/empireSymbol.svg';
 import Background from '../../components/Background';
 
-const Card = () => {
+function Home() {
   return (
     <Container>
       <Background />
       <Content>
-        <img src={logoImg} alt="GoBarber" />
+        <img src={logoImg} alt="Star Wars" />
         <h1>Escolha seu lado</h1>
         <div>
           <Link to="/search-page">
@@ -26,6 +26,6 @@ const Card = () => {
       </Content>
     </Container>
   );
-};
+}
 
-export default Card;
+export default Home;

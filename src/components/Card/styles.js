@@ -24,9 +24,23 @@ export const Container = styled.div`
     justify-content: space-between;
 
     div {
-      background: url(${(props) => props.theme.backgroundImage}) no-repeat;
-      background-size: 70%;
-      background-position: 20% 20%;
+      display: block;
+      position: relative;
+
+      &::after {
+        content: '';
+        background: url(${(props) => props.theme.backgroundImage}) no-repeat;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+
+        background-size: 70%;
+        background-position: 20% 20%;
+      }
 
       img {
         width: 100%;
@@ -53,34 +67,21 @@ export const Container = styled.div`
         font-size: 20px;
         line-height: 1.75em;
       }
-
-      button {
-        width: 200px;
-        margin-top: 50px;
-        cursor: pointer;
-        border: 1px solid #fff;
-        background: #000;
-        padding: 20px;
-        color: #fff;
-        text-transform: uppercase;
-        transition: 0.3s;
-
-        &:hover {
-          border: 1px solid #f7b80a;
-          color: #f7b80a;
-          background: #252525;
-        }
-      }
     }
   }
-`;
 
-export const SearchButton = styled.button`
-  color: white;
-  background: ${(props) => props.theme.colors.primary};
-  border-radius: 50px;
-  padding: 10px 30px;
-  cursor: pointer;
-  font-size: 20px;
-  outline: none;
+  button {
+    color: white;
+    background: ${(props) => props.theme.colors.primary};
+    border-radius: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+
+    &#anterior {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
 `;
