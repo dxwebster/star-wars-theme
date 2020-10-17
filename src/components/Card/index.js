@@ -21,12 +21,12 @@ export default function Card() {
   }, [characterId]);
 
   function handleIncrementId() {
-    setCharacterId(characterId + 1);
     if (characterId > 3) return;
+    setCharacterId(characterId + 1);
   }
 
   function handleDecrementId() {
-    if (characterId < 1) return;
+    if (characterId < 2) return;
     setCharacterId(characterId - 1);
   }
 
@@ -34,7 +34,7 @@ export default function Card() {
     try {
       setLoading(true);
 
-      const response = await api.get(`/character/${characterId}`);
+      const response = await api.get(`/lightCharacter/${characterId}`);
       setCharacterData(response.data);
 
       setLoading(false);

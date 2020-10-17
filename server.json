@@ -1,5 +1,5 @@
 {
-  "character": [
+  "lightCharacter": [
     {
       "id": 1,
       "name": "Luke Skywalker",
@@ -8,21 +8,47 @@
     },
     {
       "id": 2,
+      "name": "R2-D2",
+      "description": "R2-D2 é um pequeno robô e um dos principais personagens da saga Star Wars. Ele é um droide astromecânico, responsável por manutenção e navegação de astronaves.",
+      "image": "https://ik.imagekit.io/dxwebster/3_agXGAunj_.png"
+    },
+    {
+      "id": 3,
+      "name": "BB-8",
+      "description": "BB-8 é um robô personagem esférico com movimentação livre de sua cabeça em formato de domo, com inteligência artificial consegue se comunicar com quase todas as espécies da galáxia inclusive humanos.",
+      "image": "https://ik.imagekit.io/dxwebster/5_qu2JdMY9c.png"
+    },
+    {
+      "id": 4,
+      "name": "Chewbacca",
+      "description": "Chewbacca é o copiloto da nave Millennium Falcon e o melhor amigo de Han Solo, e um alienígena da raça Wookiee, oriundo do planeta Kashyyyk. Junto com outros wookiees ele combateu as forças de Palpatine e do Império Galáctico, sendo o único sobrevivente de uma missão para salvar filhotes Wookiees de escravistas.",
+      "image": "https://ik.imagekit.io/dxwebster/6_b_aJc17q4.png"
+    }
+  ],
+  "darkCharacter": [
+    {
+      "id": 1,
+      "name": "Darth Vader",
+      "description": "Anakin Skywalker foi seduzido pelo lado negro da Força, tornou-se Darth Vader e liderou a erradicação da Ordem Jedi pelo Império. Ele permaneceu a serviço do Imperador por décadas e tentando acabar com a Aliança Rebelde.",
+      "image": "https://ik.imagekit.io/dxwebster/4_A9Vt8Sitk.png"
+    },
+    {
+      "id": 2,
+      "name": "Kylo Ren",
+      "description": "Ben Solo, que mais tarde assumiu o nome de Kylo Ren, é filho da Princesa Leia com Han Solo e possui uma relação complicada com a protagonista Rey, a neta do Imperador, sendo ela sua principal rival, ao mesmo tempo em que eles progressivamente começam a se apaixonar um pelo outro.",
+      "image": "https://ik.imagekit.io/dxwebster/7_GvhkVsNWK.png"
+    },
+    {
+      "id": 3,
       "name": "Stormtrooper",
       "description": "Os Stormtroopers são a tropa de base do Império Galáctico no universo Star Wars. Devido à extenção do Império existem variações para diferentes terrenos e situações",
       "image": "https://ik.imagekit.io/dxwebster/2_p0zF2fF85t.png"
     },
     {
-      "id": 3,
-      "name": "R2D2",
-      "description": "R2-D2 é um pequeno robô e um dos principais personagens da saga Star Wars. Ele é um droide astromecânico, responsável por manutenção e navegação de astronaves.",
-      "image": "https://ik.imagekit.io/dxwebster/3_agXGAunj_.png"
-    },
-    {
       "id": 4,
-      "name": "Darth Vader",
-      "description": "Anakin Skywalker foi seduzido pelo lado negro da Força, tornou-se Darth Vader e liderou a erradicação da Ordem Jedi pelo Império. Ele permaneceu a serviço do Imperador por décadas e tentando acabar com a Aliança Rebelde.",
-      "image": "https://ik.imagekit.io/dxwebster/4_A9Vt8Sitk.png"
+      "name": "Estrela da Morte",
+      "description": "Estrela da Morte é uma estação espacial bélica criada pelo Império Galáctico que é capaz de causar a destruição total de planetas.",
+      "image": "https://ik.imagekit.io/dxwebster/8_w_MCv4uJD.png"
     }
   ]
 }
