@@ -1,3 +1,10 @@
+## Star Wars Characters Profile
+
+Essa é uma aplicação que traz o nome e descrição de alguns personagens do Star Wars para praticar alguns conceitos do ReactJS, como:
+
+- Consumo de Fake API com Json Server
+- Mudaça de Temas com Theme Provider do Styled Components
+
 <p align=center>
 
 <h5 align=center>
@@ -14,15 +21,6 @@ Confira a aplicação [aqui](#)
 </h2>
 
 </p>
-
----
-
-## 🔖 Star Wars Characters Profile
-
-Essa é uma aplicação que traz o nome e descrição de alguns personagens do Star Wars para praticar alguns conceitos do ReactJS, como:
-
-- Consumo de Fake API com Json Server
-- Mudaça de Temas com Theme Provider do Styled Components
 
 ## 📥 Execute esse projeto no seu computador
 
