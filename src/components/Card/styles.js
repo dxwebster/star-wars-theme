@@ -12,6 +12,14 @@ export const Container = styled.div`
   align-items: center;
   z-index: 999;
 
+  section {
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   main {
     width: 100%;
     max-width: 1500px;
@@ -21,9 +29,8 @@ export const Container = styled.div`
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
-    div {
+    .card-image {
       display: block;
       position: relative;
 
@@ -47,11 +54,10 @@ export const Container = styled.div`
       }
     }
 
-    span {
+    .card-data {
       margin-left: -150px;
       flex: 1;
       padding: 50px;
-      border: 2px solid ${(props) => props.theme.colors.primary};
 
       h1 {
         color: white;
@@ -59,13 +65,48 @@ export const Container = styled.div`
         font-weight: 700;
         padding-bottom: 20px;
         text-transform: uppercase;
+        position: relative;
+        margin-bottom: 30px;
+
+        &::after {
+          content: '';
+          background: ${(props) => props.theme.colors.primary};
+          width: 50px;
+          height: 5px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
       }
 
-      li {
-        list-style: none;
-        padding: 5px 0;
-        font-size: 20px;
+      p {
+        font-size: 18px;
         line-height: 1.75em;
+        margin: 30px 0;
+      }
+
+      ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+          padding: 5px 0;
+          display: flex;
+          flex-direction: column;
+          font-weight: 500;
+
+          color: ${(props) => props.theme.colors.primary};
+
+          img {
+            width: 30%;
+            margin-bottom: 10px;
+          }
+
+          span {
+            color: white;
+            font-weight: 200;
+          }
+        }
       }
     }
   }

@@ -6,6 +6,8 @@ import Loading from '../../components/Loading';
 
 import api from '../../services/api';
 
+import planetImg from '../../assets/planet.png';
+
 export default function Card() {
   const [loading, setLoading] = useState(true);
 
@@ -56,10 +58,11 @@ export default function Card() {
       const response = await api.get(`/${title}/${characterId}`);
       setCharacterData(response.data);
 
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
     } catch (error) {
       console.error(error);
-      setErrorMessage('Não foi possivel obter os personagens.');
     }
   };
 
@@ -68,24 +71,38 @@ export default function Card() {
       <button onClick={handleDecrementId} id="anterior">
         Anterior
       </button>
-      <main>
-        {loading ? (
+
+      {loading ? (
+        <section>
           <Loading />
-        ) : (
-          <>
-            <div>
-              <img src={characterData.image} alt={characterData.name} />
-            </div>
+        </section>
+      ) : (
+        <main>
+          <div className="card-image">
+            <img src={characterData.image} alt={characterData.name} />
+          </div>
 
-            <span>
-              <h1>{characterData.name}</h1>
-              <li>{characterData.description}</li>
-            </span>
-          </>
-        )}
+          <div className="card-data">
+            <h1>{characterData.name}</h1>
+            <p>{characterData.description}</p>
 
-        {errorMessage && <p className="error">{errorMessage}</p>}
-      </main>
+            <ul>
+              <li>
+                Origem
+                <span>{characterData.planet}</span>
+              </li>
+              <li>
+                Espécie
+                <span>{characterData.specie}</span>
+              </li>
+              <li>
+                Afiliação
+                <span>{characterData.afiliation}</span>
+              </li>
+            </ul>
+          </div>
+        </main>
+      )}
 
       <button onClick={handleIncrementId} id="proximo">
         Próximo

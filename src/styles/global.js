@@ -8,15 +8,15 @@ export default createGlobalStyle`
   }
 
   body {    
-    font-size: 14px;
     font-family: sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #000;
     height: 100vh;
-  overflow: hidden;
-
+    overflow: hidden;
   }
 
 
@@ -25,5 +25,8 @@ export default createGlobalStyle`
     border: none;
   }
 
+  li{
+    list-style: none;
+  }
 
 `;
