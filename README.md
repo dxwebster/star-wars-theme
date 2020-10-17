@@ -12,7 +12,7 @@ Ao trocar o tema ele busca os personagens correspondentes. Por exemplo, ao selec
 <p align=center>
 
 <h5 align=center>
-<img src="readme/Capa.gif"><br>
+<img src="readme/Capa2.gif"><br>
 
 🎨 Design por [Adriana Lima](https://github.com/dxwebster)
 
@@ -32,10 +32,13 @@ Confira a aplicação [aqui](#)
 - Ir para a pasta: `cd Star-Wars-Info`
 - Instalar dependências: `yarn`
 - Rodar Aplicação: `yarn start`
+- Rodar servidor: `yarn json-server server.json -p 3333`
 
 ## 🛠 Como criar esse projeto do zero
 
 Confira passo a passo na aba wiki:
+
+[1. Crie um novo React App](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Crie-um-novo-React-App)
 
 [2. Criação de uma Fake API com Json Server](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Cria%C3%A7%C3%A3o-de-uma-Fake-API-com-Json-Server)
 
