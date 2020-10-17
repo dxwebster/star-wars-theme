@@ -276,10 +276,10 @@ export const Container = styled.div`
 
   @keyframes animStar {
     from {
-      transform: translateY(0px);
+      transform: translateX(0px);
     }
     to {
-      transform: translateY(-2000px);
+      transform: translateX(-2000px);
     }
   }
 `;

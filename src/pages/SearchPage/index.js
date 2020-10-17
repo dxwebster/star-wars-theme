@@ -20,7 +20,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <Background /> */}
+      <Background />
       <Container>
         <Header toggleTheme={toggleTheme} />
 

@@ -17,6 +17,12 @@
       "name": "R2D2",
       "description": "R2-D2 é um pequeno robô e um dos principais personagens da saga Star Wars. Ele é um droide astromecânico, responsável por manutenção e navegação de astronaves.",
       "image": "https://ik.imagekit.io/dxwebster/3_agXGAunj_.png"
+    },
+    {
+      "id": 4,
+      "name": "Darth Vader",
+      "description": "Anakin Skywalker foi seduzido pelo lado negro da Força, tornou-se Darth Vader e liderou a erradicação da Ordem Jedi pelo Império. Ele permaneceu a serviço do Imperador por décadas e tentando acabar com a Aliança Rebelde.",
+      "image": "https://ik.imagekit.io/dxwebster/4_A9Vt8Sitk.png"
     }
   ]
 }

@@ -5,7 +5,7 @@ import { ThemeContext } from 'styled-components';
 
 import logoImg from '../../assets/logo.png';
 
-import { Container, SearchButton } from './styles';
+import { Container } from './styles';
 import { shade } from 'polished';
 
 const Header = ({ toggleTheme, newCharacter }) => {
@@ -25,7 +25,6 @@ const Header = ({ toggleTheme, newCharacter }) => {
         onColor={colors.secundary}
       />
       <div>
-        <SearchButton onClick={newCharacter}>Buscar</SearchButton>
         <Link to="/">
           <img src={logoImg} alt="Star Wars" />
         </Link>

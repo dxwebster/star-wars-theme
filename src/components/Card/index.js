@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import { Container } from './styles';
+import { Container, SearchButton } from './styles';
 import Loading from '../../components/Loading';
+
+import Background from '../../components/Background';
 
 import api from '../../services/api';
 
@@ -19,8 +21,8 @@ export default function Card() {
   }, [characterId]);
 
   function handleIncrementId() {
-    if (characterId > 3) return;
     setCharacterId(characterId + 1);
+    if (characterId > 3) return;
   }
 
   function handleDecrementId() {
@@ -44,23 +46,27 @@ export default function Card() {
 
   return (
     <Container>
-      <button onClick={handleDecrementId}>Anterior</button>
-      {loading ? (
-        <Loading />
-      ) : (
-        <>
-          <img src={characterData.image} alt={characterData.name} />
+      <SearchButton onClick={handleDecrementId}>Anterior</SearchButton>
+      <main>
+        {loading ? (
+          <Loading />
+        ) : (
+          <>
+            <div>
+              <img src={characterData.image} alt={characterData.name} />
+            </div>
 
-          <div>
-            <h1>{characterData.name}</h1>
-            <li>{characterData.description}</li>
-          </div>
-        </>
-      )}
+            <span>
+              <h1>{characterData.name}</h1>
+              <li>{characterData.description}</li>
+            </span>
+          </>
+        )}
 
-      {errorMessage && <p className="error">{errorMessage}</p>}
+        {errorMessage && <p className="error">{errorMessage}</p>}
+      </main>
 
-      <button onClick={handleIncrementId}>Próximo</button>
+      <SearchButton onClick={handleIncrementId}>Próximo</SearchButton>
     </Container>
   );
 }

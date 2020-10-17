@@ -1,5 +1,6 @@
 export default {
   title: 'light',
+  backgroundImage: 'https://ik.imagekit.io/dxwebster/rebelSymbol_GC8ZdYHZb.svg',
 
   colors: {
     primary: '#043f79',

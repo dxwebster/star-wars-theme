@@ -1,5 +1,6 @@
 export default {
   title: 'dark',
+  backgroundImage: 'https://ik.imagekit.io/dxwebster/empireSymbol_ba14NbP7m.svg',
 
   colors: {
     primary: '#aa0000',
