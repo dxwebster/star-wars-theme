@@ -6,8 +6,6 @@ import Loading from '../../components/Loading';
 
 import api from '../../services/api';
 
-import planetImg from '../../assets/planet.png';
-
 export default function Card() {
   const [loading, setLoading] = useState(true);
 

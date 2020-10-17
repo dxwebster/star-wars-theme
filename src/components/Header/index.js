@@ -3,7 +3,7 @@ import Switch from 'react-switch';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from 'styled-components';
 
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/logo.svg';
 
 import { Container } from './styles';
 import { shade } from 'polished';
