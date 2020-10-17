@@ -28,19 +28,19 @@ Confira a aplicação [aqui](#)
 
 ## 📥 Execute esse projeto no seu computador
 
-- Clonar Repositório: `git clone https://github.com/dxwebster/Star-Wars-Info.git`
-- Ir para a pasta: `cd Star-Wars-Info`
+- Clonar Repositório: `git clone https://github.com/dxwebster/Star-Wars-Characters-Profile`
+- Ir para a pasta: `cd Star-Wars-Characters-Profile`
 - Instalar dependências: `yarn`
-- Rodar Aplicação: `yarn start`
 - Rodar servidor: `yarn json-server server.json -p 3333`
+- Rodar Aplicação: `yarn start`
+
 
 ## 🛠 Como criar esse projeto do zero
 
 Confira passo a passo na aba wiki:
 
-[1. Crie um novo React App](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Crie-um-novo-React-App)
-
-[2. Criação de uma Fake API com Json Server](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Cria%C3%A7%C3%A3o-de-uma-Fake-API-com-Json-Server)
+- [1. Crie um novo React App](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Crie-um-novo-React-App)
+- [2. Criação de uma Fake API com Json Server](https://github.com/dxwebster/Star-Wars-Characters-Profile/wiki/Cria%C3%A7%C3%A3o-de-uma-Fake-API-com-Json-Server)
 
 Em construção...
 
