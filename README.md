@@ -3,7 +3,7 @@
 Essa é uma aplicação que exibe o perfil de alguns personagens do Star Wars para praticar alguns conceitos do ReactJS, como:
 
 - Consumo de Fake API com Json Server
-- Mudaça de Temas com Theme Provider do Styled Components
+- Mudança de Tema com Theme Provider do Styled Components
 
 **Principal funcionalidade**
 
