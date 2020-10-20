@@ -20,7 +20,6 @@ Ao trocar o tema ele busca os personagens correspondentes. Por exemplo, ao selec
 
 <h2 align=center>
 
-Confira a aplicação [aqui](#)
 
 </h2>
 
