@@ -7,7 +7,13 @@ import rebelSymbol from '../../assets/rebelSymbol.svg';
 import empireSymbol from '../../assets/empireSymbol.svg';
 import Background from '../../components/Background';
 
+import { useTheme } from '../../hooks/theme'
+
+
 function Home() {
+
+  const { changeThemeByName } = useTheme()
+
   return (
     <Container>
       <Background />
@@ -15,11 +21,11 @@ function Home() {
         <img src={logoImg} alt="Star Wars" />
         <h1>Escolha seu lado</h1>
         <div>
-          <Link to="/search-page">
+          <Link to="/search-page" onClick={() => changeThemeByName('light')}>
             <img src={rebelSymbol} alt="rebelSymbol" />
           </Link>
 
-          <Link to="/search-page">
+          <Link to="/search-page" onClick={() => changeThemeByName('dark')}>
             <img src={empireSymbol} alt="empireSymbol" />
           </Link>
         </div>

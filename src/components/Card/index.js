@@ -6,6 +6,8 @@ import Loading from '../../components/Loading';
 
 import api from '../../services/api';
 
+import { useTheme } from '../../hooks/theme'
+
 export default function Card() {
   const [loading, setLoading] = useState(true);
 
@@ -13,6 +15,8 @@ export default function Card() {
   const [characterId, setCharacterId] = useState(1);
 
   const { title } = useContext(ThemeContext);
+
+  const { theme } = useTheme()
 
   useEffect(() => {
     loadCharacter();
@@ -51,7 +55,7 @@ export default function Card() {
     try {
       setLoading(true);
 
-      const response = await api.get(`/${title}/${characterId}`);
+      const response = await api.get(`/${theme.title}/${characterId}`);
       setCharacterData(response.data);
 
       setTimeout(() => {
@@ -73,32 +77,32 @@ export default function Card() {
           <Loading />
         </section>
       ) : (
-        <main>
-          <div className="card-image">
-            <img src={characterData.image} alt={characterData.name} />
-          </div>
+          <main>
+            <div className="card-image">
+              <img src={characterData.image} alt={characterData.name} />
+            </div>
 
-          <div className="card-data">
-            <h1>{characterData.name}</h1>
-            <p>{characterData.description}</p>
+            <div className="card-data">
+              <h1>{characterData.name}</h1>
+              <p>{characterData.description}</p>
 
-            <ul>
-              <li>
-                Origem
+              <ul>
+                <li>
+                  Origem
                 <span>{characterData.planet}</span>
-              </li>
-              <li>
-                Espécie
+                </li>
+                <li>
+                  Espécie
                 <span>{characterData.specie}</span>
-              </li>
-              <li>
-                Afiliação
+                </li>
+                <li>
+                  Afiliação
                 <span>{characterData.afiliation}</span>
-              </li>
-            </ul>
-          </div>
-        </main>
-      )}
+                </li>
+              </ul>
+            </div>
+          </main>
+        )}
 
       <button onClick={handleIncrementId} id="proximo">
         Próximo
