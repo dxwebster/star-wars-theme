@@ -1,28 +1,31 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Switch from 'react-switch';
 import { Link } from 'react-router-dom';
-import { ThemeContext } from 'styled-components';
+
 
 import logoImg from '../../assets/logo.svg';
 
 import { Container } from './styles';
 import { shade } from 'polished';
 
-const Header = ({ handleToggleTheme }) => {
-  const { colors, title } = useContext(ThemeContext);
+import { useTheme } from '../../hooks/theme'
+
+const Header = () => {
+
+  const { toggleTheme, theme } = useTheme()
 
   return (
     <Container>
       <Switch
-        onChange={handleToggleTheme}
-        checked={title === 'dark'}
+        onChange={toggleTheme}
+        checked={theme.title === 'dark'}
         checkedIcon={false}
         uncheckedIcon={false}
         height={40}
         width={80}
         handleDiameter={40}
-        offColor={shade(0.15, colors.primary)}
-        onColor={colors.secundary}
+        offColor={shade(0.15, theme.colors.primary)}
+        onColor={theme.colors.secundary}
       />
       <div>
         <Link to="/">
